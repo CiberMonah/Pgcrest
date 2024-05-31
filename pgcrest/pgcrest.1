@@ -1,0 +1,34 @@
+.TH PGCREST 1 pgcrest\-VERSION
+.SH NAME
+pgcrest \- thin REST interface to PostgreSQL database
+.SH SYNOPSIS
+.B pgcrest
+.RB [-w\ workers]
+.RB [-c\ config]
+.SH DESCRIPTION
+pgcrest is a simple asynchronous HTTP-server which accepts HTTP requests and 
+translates them into SQL commands to the connected PostgreSQL database.
+It can keep a pool of PG connections, provides a simple authorization mechanism 
+using JWT. 
+.SH OPTIONS
+.TP
+.B \-w workers 
+Number of parallel worker
+.TP
+.B \-y
+Answer yes for all questions.
+.TP
+.B \-c config
+Configuration file name.
+By default, configuration is taken from
+.IR /etc/pgcrest.conf .
+
+
+.SH CONFIGURATION
+
+
+.SH SIGNALS
+
+.SH BUGS
+
+.SH TODO
